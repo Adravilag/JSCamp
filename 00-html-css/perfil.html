@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mi Perfil - Gestiona tu perfil profesional en JSCamp" />
+    <title>Mi Perfil - JSCamp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-device-gamepad-3 logo-icon">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12.707 14.293l3 3a1 1 0 0 1 .293 .707v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a1 1 0 0 1 .293 -.707l3 -3a1 1 0 0 1 1.414 0m-6.707 -6.293a1 1 0 0 1 .707 .293l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1 -.707 .293h-2a2 2 0 0 1 -2 -2v-4a2 2 0 0 1 2 -2zm14 0a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-2a1 1 0 0 1 -.707 -.293l-3 -3a1 1 0 0 1 0 -1.414l3 -3a1 1 0 0 1 .707 -.293zm-6 -6a2 2 0 0 1 2 2v2a1 1 0 0 1 -.293 .707l-3 3a1 1 0 0 1 -1.414 0l-3 -3a1 1 0 0 1 -.293 -.707v-2a2 2 0 0 1 2 -2z" />
+            </svg>
+            <span class="logo-text">JSCamp</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="index.html#empleos" class="nav-link">Empleos</a></li>
+            <li><a href="index.html#empresas" class="nav-link">Empresas</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+          <div class="auth-buttons">
+            <a href="#" class="btn-login">Notificaciones</a>
+            <a href="#" class="btn-register">Cerrar sesión</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="profile-layout">
+      <!-- Sidebar de navegación -->
+      <aside class="profile-sidebar">
+        <div class="profile-user-info">
+          <div class="profile-avatar-small">
+            <span>JD</span>
+          </div>
+          <div class="profile-user-details">
+            <h3 class="profile-username">Juan Desarrollador</h3>
+            <p class="profile-user-role">Frontend Developer</p>
+          </div>
+        </div>
+
+        <nav class="profile-nav">
+          <ul class="profile-nav-list">
+            <li class="profile-nav-item active">
+              <a href="#informacion-personal" class="profile-nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                Información personal
+              </a>
+            </li>
+            <li class="profile-nav-item">
+              <a href="#experiencia" class="profile-nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+                Experiencia laboral
+              </a>
+            </li>
+            <li class="profile-nav-item">
+              <a href="#educacion" class="profile-nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                Educación
+              </a>
+            </li>
+            <li class="profile-nav-item">
+              <a href="#habilidades" class="profile-nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 12l2 2 4-4"/>
+                  <path d="M21 12c.552 0 1-.448 1-1V8c0-.552-.448-1-1-1s-1 .448-1 1v3c0 .552.448 1 1 1z"/>
+                  <path d="M3 12c-.552 0-1-.448-1-1V8c0-.552.448-1 1-1s1 .448 1 1v3c0-.552-.448-1-1-1z"/>
+                </svg>
+                Habilidades
+              </a>
+            </li>
+            <li class="profile-nav-item">
+              <a href="#portfolio" class="profile-nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <polyline points="21,15 16,10 5,21"/>
+                </svg>
+                Portfolio
+              </a>
+            </li>
+            <li class="profile-nav-item">
+              <a href="#configuracion" class="profile-nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+                Configuración
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Contenido principal -->
+      <main class="profile-content">
+        <div class="profile-header-section">
+          <h1 class="profile-page-title">Mi perfil</h1>
+          <p class="profile-page-subtitle">Gestiona tu información personal y profesional</p>
+        </div>
+
+        <!-- Sección Información Personal -->
+        <section id="informacion-personal" class="profile-section active">
+          <div class="section-header">
+            <h2 class="section-title">Información personal</h2>
+            <button class="btn-edit">Editar</button>
+          </div>
+
+          <div class="profile-form-grid">
+            <div class="form-group">
+              <label class="form-label">Nombre completo</label>
+              <input type="text" class="form-input" value="Juan Desarrollador" readonly>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" value="juan.dev@ejemplo.com" readonly>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Teléfono</label>
+              <input type="tel" class="form-input" value="+34 123 456 789" readonly>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Ubicación</label>
+              <input type="text" class="form-input" value="Madrid, España" readonly>
+            </div>
+
+            <div class="form-group form-group-full">
+              <label class="form-label">Biografía</label>
+              <textarea class="form-textarea" readonly>Desarrollador Frontend apasionado con más de 5 años de experiencia en React, TypeScript y tecnologías web modernas. Me especializo en crear interfaces de usuario intuitivas y experiencias digitales excepcionales.</textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">LinkedIn</label>
+              <input type="url" class="form-input" value="https://linkedin.com/in/juan-desarrollador" readonly>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">GitHub</label>
+              <input type="url" class="form-input" value="https://github.com/juan-dev" readonly>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Experiencia Laboral -->
+        <section id="experiencia" class="profile-section">
+          <div class="section-header">
+            <h2 class="section-title">Experiencia laboral</h2>
+            <button class="btn-add">Añadir experiencia</button>
+          </div>
+
+          <div class="experience-list">
+            <div class="experience-item">
+              <div class="experience-header">
+                <div class="experience-info">
+                  <h3 class="experience-title">Senior Frontend Developer</h3>
+                  <p class="experience-company">TechCorp Solutions</p>
+                  <p class="experience-period">Enero 2022 - Presente</p>
+                </div>
+                <button class="btn-edit-small">Editar</button>
+              </div>
+              <p class="experience-description">
+                Lideré el desarrollo de la nueva plataforma web utilizando React y TypeScript. Implementé arquitecturas escalables y mejoré el rendimiento en un 40%. Mentoré a 3 desarrolladores junior y establecí mejores prácticas de desarrollo.
+              </p>
+              <div class="experience-technologies">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <div class="experience-info">
+                  <h3 class="experience-title">Frontend Developer</h3>
+                  <p class="experience-company">StartupHub</p>
+                  <p class="experience-period">Marzo 2020 - Diciembre 2021</p>
+                </div>
+                <button class="btn-edit-small">Editar</button>
+              </div>
+              <p class="experience-description">
+                Desarrollé múltiples aplicaciones web para startups emergentes. Colaboré estrechamente con diseñadores UX/UI para crear interfaces atractivas y funcionales. Implementé soluciones de testing automatizado.
+              </p>
+              <div class="experience-technologies">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Sass</span>
+                <span class="tech-tag">Jest</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Educación -->
+        <section id="educacion" class="profile-section">
+          <div class="section-header">
+            <h2 class="section-title">Educación</h2>
+            <button class="btn-add">Añadir educación</button>
+          </div>
+
+          <div class="education-list">
+            <div class="education-item">
+              <div class="education-header">
+                <div class="education-info">
+                  <h3 class="education-title">Ingeniería en Informática</h3>
+                  <p class="education-institution">Universidad Politécnica de Madrid</p>
+                  <p class="education-period">2015 - 2019</p>
+                </div>
+                <button class="btn-edit-small">Editar</button>
+              </div>
+              <p class="education-description">
+                Graduado con honores. Especialización en desarrollo de software y sistemas distribuidos. Proyecto final: Plataforma de e-learning con React y microservicios.
+              </p>
+            </div>
+
+            <div class="education-item">
+              <div class="education-header">
+                <div class="education-info">
+                  <h3 class="education-title">Certificación React Developer</h3>
+                  <p class="education-institution">Meta (Facebook)</p>
+                  <p class="education-period">2021</p>
+                </div>
+                <button class="btn-edit-small">Editar</button>
+              </div>
+              <p class="education-description">
+                Certificación oficial en desarrollo avanzado con React, incluyendo hooks, context API, y optimización de rendimiento.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades" class="profile-section">
+          <div class="section-header">
+            <h2 class="section-title">Habilidades</h2>
+            <button class="btn-add">Añadir habilidad</button>
+          </div>
+
+          <div class="skills-container">
+            <div class="skills-category">
+              <h3 class="skills-category-title">Lenguajes de programación</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <span class="skill-name">JavaScript</span>
+                  <div class="skill-level">
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">TypeScript</span>
+                  <div class="skill-level">
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Python</span>
+                  <div class="skill-level">
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3 class="skills-category-title">Frameworks y librerías</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <span class="skill-name">React</span>
+                  <div class="skill-level">
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Node.js</span>
+                  <div class="skill-level">
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Vue.js</span>
+                  <div class="skill-level">
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Portfolio -->
+        <section id="portfolio" class="profile-section">
+          <div class="section-header">
+            <h2 class="section-title">Portfolio</h2>
+            <button class="btn-add">Añadir proyecto</button>
+          </div>
+
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <div class="portfolio-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21,15 16,10 5,21"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">E-commerce Platform</h3>
+                <p class="portfolio-description">
+                  Plataforma completa de comercio electrónico desarrollada con React y Node.js. Incluye panel de administración, pasarela de pagos y sistema de inventarios.
+                </p>
+                <div class="portfolio-technologies">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link">Ver demo</a>
+                  <a href="#" class="portfolio-link">Código</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-image">
+                <div class="portfolio-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                    <polyline points="21,15 16,10 5,21"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Task Management App</h3>
+                <p class="portfolio-description">
+                  Aplicación de gestión de tareas con funcionalidades avanzadas como colaboración en tiempo real, notificaciones push y sincronización offline.
+                </p>
+                <div class="portfolio-technologies">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">PWA</span>
+                </div>
+                <div class="portfolio-links">
+                  <a href="#" class="portfolio-link">Ver demo</a>
+                  <a href="#" class="portfolio-link">Código</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sección Configuración -->
+        <section id="configuracion" class="profile-section">
+          <div class="section-header">
+            <h2 class="section-title">Configuración</h2>
+          </div>
+
+          <div class="settings-groups">
+            <div class="settings-group">
+              <h3 class="settings-group-title">Privacidad</h3>
+              <div class="setting-item">
+                <div class="setting-info">
+                  <span class="setting-label">Perfil público</span>
+                  <span class="setting-description">Permite que otros usuarios vean tu perfil</span>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+              <div class="setting-item">
+                <div class="setting-info">
+                  <span class="setting-label">Mostrar información de contacto</span>
+                  <span class="setting-description">Permite que reclutadores vean tu email y teléfono</span>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="settings-group">
+              <h3 class="settings-group-title">Notificaciones</h3>
+              <div class="setting-item">
+                <div class="setting-info">
+                  <span class="setting-label">Notificaciones por email</span>
+                  <span class="setting-description">Recibe ofertas de trabajo y actualizaciones</span>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" checked>
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+              <div class="setting-item">
+                <div class="setting-info">
+                  <span class="setting-label">Notificaciones push</span>
+                  <span class="setting-description">Recibe notificaciones en tiempo real</span>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox">
+                  <span class="toggle-slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="settings-group">
+              <h3 class="settings-group-title">Cuenta</h3>
+              <div class="setting-item">
+                <button class="btn-secondary">Cambiar contraseña</button>
+              </div>
+              <div class="setting-item">
+                <button class="btn-danger">Eliminar cuenta</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      // JavaScript para la navegación del perfil
+      document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.profile-nav-link');
+        const sections = document.querySelectorAll('.profile-section');
+        
+        navLinks.forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remover clase active de todos los items
+            document.querySelectorAll('.profile-nav-item').forEach(item => {
+              item.classList.remove('active');
+            });
+            
+            // Remover clase active de todas las secciones
+            sections.forEach(section => {
+              section.classList.remove('active');
+            });
+            
+            // Agregar clase active al item clickeado
+            this.parentElement.classList.add('active');
+            
+            // Mostrar la sección correspondiente
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+              targetSection.classList.add('active');
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

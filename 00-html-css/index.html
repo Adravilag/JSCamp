@@ -40,24 +40,15 @@
           <div class="hero-content">
             <h1 class="hero-title">Encuentra el trabajo de tus sueños</h1>
             <p class="hero-subtitle">
-              Únete a la comunidad más grande de desarrolladores y encuentra tu próxima oportunidad
+              Conectamos a los mejores desarrolladores con las empresas más innovadoras del mundo
             </p>
-            <div class="hero-search">
-              <div class="search-container">
-                <input 
-                  type="text" 
-                  class="search-input" 
-                  placeholder="Buscar empleos por título, empresa o tecnología..."
-                >
-                <button class="search-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <a href="#empleos" class="btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+              </svg>
+              Buscar empleos</a>
           </div>
         </div>
       </section>
@@ -121,9 +112,180 @@
       <!-- Sección de empleos destacados -->
       <section class="featured-jobs" id="empleos">
         <div class="container">
-          <h2 class="section-title">Empleos destacados</h2>
-          <div class="jobs-grid">
-            <!-- Las ofertas de trabajo se cargarán dinámicamente -->
+          <h2 class="section-title">Encuentra tu próximo trabajo</h2>
+          <p class="section-subtitle">Conectamos a los mejores desarrolladores con las empresas más innovadoras del mundo</p>
+          
+          <!-- Barra de búsqueda -->
+          <div class="search-bar">
+            <div class="search-input-group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+              <input type="text" placeholder="Buscar empleos, empresas o tecnologías..." class="search-input">
+            </div>
+            <button class="search-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+              Buscar
+            </button>
+          </div>
+
+          <!-- Filtros -->
+          <div class="filters">
+            <span class="filter-label">Filtrar por:</span>
+            <div class="filter-tags">
+              <button class="filter-tag active">Todos</button>
+              <button class="filter-tag">Remoto</button>
+              <button class="filter-tag">Presencial</button>
+              <button class="filter-tag">Híbrido</button>
+              <button class="filter-tag">Frontend</button>
+              <button class="filter-tag">Backend</button>
+              <button class="filter-tag">Full Stack</button>
+            </div>
+          </div>
+
+          <!-- Lista de empleos -->
+          <div class="jobs-list">
+            <h3 class="jobs-section-title">Resultados de búsqueda</h3>
+            
+            <!-- Job Card 1 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-company">
+                  <div class="company-logo">
+                    <span>A</span>
+                  </div>
+                  <div class="company-info">
+                    <h4 class="job-title">Ingeniero de Software</h4>
+                    <p class="company-name">Agencia de Datos</p>
+                  </div>
+                </div>
+                <button class="apply-btn">Aplicar</button>
+              </div>
+              <p class="job-description">
+                Únete a nuestro equipo como Ingeniero de Software y desarrolla soluciones innovadoras utilizando las tecnologías más avanzadas del mercado. Trabajarás en proyectos desafiantes que impactan a miles de usuarios.
+              </p>
+              <div class="job-tags">
+                <span class="job-tag">JavaScript</span>
+                <span class="job-tag">React</span>
+                <span class="job-tag">Node.js</span>
+                <span class="job-tag">Remote</span>
+              </div>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-company">
+                  <div class="company-logo">
+                    <span>A</span>
+                  </div>
+                  <div class="company-info">
+                    <h4 class="job-title">Analista de Datos</h4>
+                    <p class="company-name">Analytics Pro</p>
+                  </div>
+                </div>
+                <button class="apply-btn">Aplicar</button>
+              </div>
+              <p class="job-description">
+                Buscamos un Analista de Datos apasionado por transformar información en insights valiosos. Trabajarás con grandes volúmenes de datos y herramientas de análisis avanzadas.
+              </p>
+              <div class="job-tags">
+                <span class="job-tag">Python</span>
+                <span class="job-tag">SQL</span>
+                <span class="job-tag">Tableau</span>
+                <span class="job-tag">Presencial</span>
+              </div>
+            </div>
+
+            <!-- Job Card 3 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-company">
+                  <div class="company-logo">
+                    <span>S</span>
+                  </div>
+                  <div class="company-info">
+                    <h4 class="job-title">Especialista en Ciberseguridad</h4>
+                    <p class="company-name">SecureTech Solutions</p>
+                  </div>
+                </div>
+                <button class="apply-btn">Aplicar</button>
+              </div>
+              <p class="job-description">
+                Protege la infraestructura digital de nuestros clientes como Especialista en Ciberseguridad. Implementarás medidas de seguridad y responderás a incidentes críticos.
+              </p>
+              <div class="job-tags">
+                <span class="job-tag">Seguridad</span>
+                <span class="job-tag">Pentesting</span>
+                <span class="job-tag">ISO 27001</span>
+                <span class="job-tag">Híbrido</span>
+              </div>
+            </div>
+
+            <!-- Job Card 4 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-company">
+                  <div class="company-logo">
+                    <span>D</span>
+                  </div>
+                  <div class="company-info">
+                    <h4 class="job-title">Desarrollador de Aplicaciones Móviles</h4>
+                    <p class="company-name">DevMobile Inc</p>
+                  </div>
+                </div>
+                <button class="apply-btn">Aplicar</button>
+              </div>
+              <p class="job-description">
+                Desarrolla aplicaciones móviles innovadoras que conecten con millones de usuarios. Trabajarás en un ambiente ágil con las últimas tecnologías móviles.
+              </p>
+              <div class="job-tags">
+                <span class="job-tag">React Native</span>
+                <span class="job-tag">Flutter</span>
+                <span class="job-tag">iOS</span>
+                <span class="job-tag">Android</span>
+                <span class="job-tag">Remote</span>
+              </div>
+            </div>
+
+            <!-- Job Card 5 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-company">
+                  <div class="company-logo">
+                    <span>G</span>
+                  </div>
+                  <div class="company-info">
+                    <h4 class="job-title">Gerente de Producto</h4>
+                    <p class="company-name">Global Solutions</p>
+                  </div>
+                </div>
+                <button class="apply-btn">Aplicar</button>
+              </div>
+              <p class="job-description">
+                Lidera el desarrollo de productos tecnológicos desde la concepción hasta el lanzamiento. Coordinarás equipos multidisciplinarios y definirás la estrategia de producto.
+              </p>
+              <div class="job-tags">
+                <span class="job-tag">Product Management</span>
+                <span class="job-tag">Agile</span>
+                <span class="job-tag">Scrum</span>
+                <span class="job-tag">Presencial</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Paginación -->
+          <div class="pagination">
+            <button class="pagination-btn active">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+            <button class="pagination-btn">4</button>
+            <span class="pagination-dots">...</span>
+            <button class="pagination-btn">10</button>
           </div>
         </div>
       </section>
