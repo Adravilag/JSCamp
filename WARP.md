@@ -4,7 +4,7 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-This is a JavaScript camp (JSCamp) repository from Midu.dev courses. It's designed as a learning environment for JavaScript development concepts and practices.
+This is a JavaScript camp (DevJobs) repository from Midu.dev courses. It's designed as a learning environment for JavaScript development concepts and practices.
 
 ## Architecture & Development Environment
 
