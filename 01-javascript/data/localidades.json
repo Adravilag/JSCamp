@@ -1,0 +1,304 @@
+{
+  "localidades": [
+    {
+      "nombre": "Madrid",
+      "provincia": "Madrid",
+      "comunidad": "Comunidad de Madrid",
+      "emoji": "🏛️"
+    },
+    {
+      "nombre": "Barcelona",
+      "provincia": "Barcelona",
+      "comunidad": "Cataluña",
+      "emoji": "🏖️"
+    },
+    {
+      "nombre": "Valencia",
+      "provincia": "Valencia",
+      "comunidad": "Comunidad Valenciana",
+      "emoji": "🍊"
+    },
+    {
+      "nombre": "Sevilla",
+      "provincia": "Sevilla",
+      "comunidad": "Andalucía",
+      "emoji": "☀️"
+    },
+    {
+      "nombre": "Zaragoza",
+      "provincia": "Zaragoza",
+      "comunidad": "Aragón",
+      "emoji": "🏰"
+    },
+    {
+      "nombre": "Málaga",
+      "provincia": "Málaga",
+      "comunidad": "Andalucía",
+      "emoji": "🌴"
+    },
+    {
+      "nombre": "Murcia",
+      "provincia": "Murcia",
+      "comunidad": "Región de Murcia",
+      "emoji": "🌶️"
+    },
+    {
+      "nombre": "Palma de Mallorca",
+      "provincia": "Islas Baleares",
+      "comunidad": "Islas Baleares",
+      "emoji": "🏝️"
+    },
+    {
+      "nombre": "Las Palmas de Gran Canaria",
+      "provincia": "Las Palmas",
+      "comunidad": "Canarias",
+      "emoji": "🌋"
+    },
+    {
+      "nombre": "Bilbao",
+      "provincia": "Vizcaya",
+      "comunidad": "País Vasco",
+      "emoji": "🌊"
+    },
+    {
+      "nombre": "Alicante",
+      "provincia": "Alicante",
+      "comunidad": "Comunidad Valenciana",
+      "emoji": "🏖️"
+    },
+    {
+      "nombre": "Córdoba",
+      "provincia": "Córdoba",
+      "comunidad": "Andalucía",
+      "emoji": "🕌"
+    },
+    {
+      "nombre": "Valladolid",
+      "provincia": "Valladolid",
+      "comunidad": "Castilla y León",
+      "emoji": "🏛️"
+    },
+    {
+      "nombre": "Vigo",
+      "provincia": "Pontevedra",
+      "comunidad": "Galicia",
+      "emoji": "⚓"
+    },
+    {
+      "nombre": "Gijón",
+      "provincia": "Asturias",
+      "comunidad": "Principado de Asturias",
+      "emoji": "🏔️"
+    },
+    {
+      "nombre": "Hospitalet de Llobregat",
+      "provincia": "Barcelona",
+      "comunidad": "Cataluña",
+      "emoji": "🏙️"
+    },
+    {
+      "nombre": "A Coruña",
+      "provincia": "A Coruña",
+      "comunidad": "Galicia",
+      "emoji": "🗼"
+    },
+    {
+      "nombre": "Vitoria-Gasteiz",
+      "provincia": "Álava",
+      "comunidad": "País Vasco",
+      "emoji": "🌳"
+    },
+    {
+      "nombre": "Granada",
+      "provincia": "Granada",
+      "comunidad": "Andalucía",
+      "emoji": "🏰"
+    },
+    {
+      "nombre": "Elche",
+      "provincia": "Alicante",
+      "comunidad": "Comunidad Valenciana",
+      "emoji": "🌴"
+    },
+    {
+      "nombre": "Oviedo",
+      "provincia": "Asturias",
+      "comunidad": "Principado de Asturias",
+      "emoji": "⛪"
+    },
+    {
+      "nombre": "Badalona",
+      "provincia": "Barcelona",
+      "comunidad": "Cataluña",
+      "emoji": "🏖️"
+    },
+    {
+      "nombre": "Cartagena",
+      "provincia": "Murcia",
+      "comunidad": "Región de Murcia",
+      "emoji": "⚓"
+    },
+    {
+      "nombre": "Terrassa",
+      "provincia": "Barcelona",
+      "comunidad": "Cataluña",
+      "emoji": "🏭"
+    },
+    {
+      "nombre": "Jerez de la Frontera",
+      "provincia": "Cádiz",
+      "comunidad": "Andalucía",
+      "emoji": "🍷"
+    },
+    {
+      "nombre": "Sabadell",
+      "provincia": "Barcelona",
+      "comunidad": "Cataluña",
+      "emoji": "🏭"
+    },
+    {
+      "nombre": "Santa Cruz de Tenerife",
+      "provincia": "Santa Cruz de Tenerife",
+      "comunidad": "Canarias",
+      "emoji": "🌋"
+    },
+    {
+      "nombre": "Móstoles",
+      "provincia": "Madrid",
+      "comunidad": "Comunidad de Madrid",
+      "emoji": "🏘️"
+    },
+    {
+      "nombre": "Alcalá de Henares",
+      "provincia": "Madrid",
+      "comunidad": "Comunidad de Madrid",
+      "emoji": "📚"
+    },
+    {
+      "nombre": "Pamplona",
+      "provincia": "Navarra",
+      "comunidad": "Comunidad Foral de Navarra",
+      "emoji": "🐂"
+    },
+    {
+      "nombre": "Fuenlabrada",
+      "provincia": "Madrid",
+      "comunidad": "Comunidad de Madrid",
+      "emoji": "🏘️"
+    },
+    {
+      "nombre": "Almería",
+      "provincia": "Almería",
+      "comunidad": "Andalucía",
+      "emoji": "🏜️"
+    },
+    {
+      "nombre": "Leganés",
+      "provincia": "Madrid",
+      "comunidad": "Comunidad de Madrid",
+      "emoji": "🏘️"
+    },
+    {
+      "nombre": "Donostia-San Sebastián",
+      "provincia": "Guipúzcoa",
+      "comunidad": "País Vasco",
+      "emoji": "🏖️"
+    },
+    {
+      "nombre": "Burgos",
+      "provincia": "Burgos",
+      "comunidad": "Castilla y León",
+      "emoji": "🏰"
+    },
+    {
+      "nombre": "Santander",
+      "provincia": "Cantabria",
+      "comunidad": "Cantabria",
+      "emoji": "⛵"
+    },
+    {
+      "nombre": "Castellón de la Plana",
+      "provincia": "Castellón",
+      "comunidad": "Comunidad Valenciana",
+      "emoji": "🏖️"
+    },
+    {
+      "nombre": "Albacete",
+      "provincia": "Albacete",
+      "comunidad": "Castilla-La Mancha",
+      "emoji": "🔪"
+    },
+    {
+      "nombre": "Getafe",
+      "provincia": "Madrid",
+      "comunidad": "Comunidad de Madrid",
+      "emoji": "✈️"
+    },
+    {
+      "nombre": "Alcorcón",
+      "provincia": "Madrid",
+      "comunidad": "Comunidad de Madrid",
+      "emoji": "🏘️"
+    },
+    {
+      "nombre": "Logroño",
+      "provincia": "La Rioja",
+      "comunidad": "La Rioja",
+      "emoji": "🍇"
+    },
+    {
+      "nombre": "Badajoz",
+      "provincia": "Badajoz",
+      "comunidad": "Extremadura",
+      "emoji": "🏰"
+    },
+    {
+      "nombre": "Salamanca",
+      "provincia": "Salamanca",
+      "comunidad": "Castilla y León",
+      "emoji": "🎓"
+    },
+    {
+      "nombre": "Huelva",
+      "provincia": "Huelva",
+      "comunidad": "Andalucía",
+      "emoji": "🍓"
+    },
+    {
+      "nombre": "Lleida",
+      "provincia": "Lleida",
+      "comunidad": "Cataluña",
+      "emoji": "🏔️"
+    },
+    {
+      "nombre": "Tarragona",
+      "provincia": "Tarragona",
+      "comunidad": "Cataluña",
+      "emoji": "🏛️"
+    },
+    {
+      "nombre": "León",
+      "provincia": "León",
+      "comunidad": "Castilla y León",
+      "emoji": "🦁"
+    },
+    {
+      "nombre": "Cádiz",
+      "provincia": "Cádiz",
+      "comunidad": "Andalucía",
+      "emoji": "🌊"
+    },
+    {
+      "nombre": "Jaén",
+      "provincia": "Jaén",
+      "comunidad": "Andalucía",
+      "emoji": "🫒"
+    },
+    {
+      "nombre": "Remoto",
+      "provincia": "Nacional",
+      "comunidad": "Todas",
+      "emoji": "🌍"
+    }
+  ]
+}

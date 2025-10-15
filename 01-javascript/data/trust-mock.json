@@ -1,0 +1,370 @@
+{
+  "companies": {
+    "amazon": {
+      "verified": true,
+      "verificationBadge": "Empresa verificada",
+      "activeOffers": 12,
+      "lastPostDate": "2024-10-10",
+      "companyWebsite": "https://www.amazon.com",
+      "rating": 4.7,
+      "reviewsCount": 245,
+      "employeeReviews": [
+        {
+          "author": "Desarrollador en Amazon",
+          "rating": 5,
+          "comment": "Excelente ambiente de trabajo y oportunidades de crecimiento"
+        },
+        {
+          "author": "Data Scientist en Amazon",
+          "rating": 4,
+          "comment": "Buenos beneficios, aunque el ritmo de trabajo es intenso"
+        }
+      ]
+    },
+    "microsoft": {
+      "verified": true,
+      "verificationBadge": "Empresa verificada",
+      "activeOffers": 18,
+      "lastPostDate": "2024-10-12",
+      "companyWebsite": "https://www.microsoft.com",
+      "rating": 4.8,
+      "reviewsCount": 512,
+      "employeeReviews": [
+        {
+          "author": "Security Engineer en Microsoft",
+          "rating": 5,
+          "comment": "Liderazgo de clase mundial y excelentes recursos"
+        },
+        {
+          "author": "Product Manager en Microsoft",
+          "rating": 5,
+          "comment": "Cultura de innovación y equipo de alta calidad"
+        },
+        {
+          "author": "Developer en Microsoft",
+          "rating": 4,
+          "comment": "Excelentes beneficios y oportunidades de desarrollo"
+        }
+      ]
+    },
+    "netflix": {
+      "verified": true,
+      "verificationBadge": "Empresa verificada",
+      "activeOffers": 8,
+      "lastPostDate": "2024-10-08",
+      "companyWebsite": "https://www.netflix.com",
+      "rating": 4.6,
+      "reviewsCount": 389,
+      "employeeReviews": [
+        {
+          "author": "Mobile Developer en Netflix",
+          "rating": 5,
+          "comment": "Tecnología de punta y libertad creativa absoluta"
+        },
+        {
+          "author": "iOS Developer en Netflix",
+          "rating": 4,
+          "comment": "Gran empresa pero muy competitivo"
+        }
+      ]
+    },
+    "apple": {
+      "verified": true,
+      "verificationBadge": "Empresa verificada",
+      "activeOffers": 5,
+      "lastPostDate": "2024-10-11",
+      "companyWebsite": "https://www.apple.com",
+      "rating": 4.9,
+      "reviewsCount": 678,
+      "employeeReviews": [
+        {
+          "author": "Product Manager en Apple",
+          "rating": 5,
+          "comment": "Innovación a nivel mundial, ambiente perfeccionista"
+        },
+        {
+          "author": "Designer en Apple",
+          "rating": 5,
+          "comment": "Atención al detalle y pasión por la excelencia"
+        }
+      ]
+    },
+    "spotify": {
+      "verified": true,
+      "verificationBadge": "Empresa verificada",
+      "activeOffers": 14,
+      "lastPostDate": "2024-10-09",
+      "companyWebsite": "https://www.spotify.com",
+      "rating": 4.5,
+      "reviewsCount": 298,
+      "employeeReviews": [
+        {
+          "author": "Frontend Developer en Spotify",
+          "rating": 4,
+          "comment": "Excelente para aprender, cultura de startup en gran empresa"
+        }
+      ]
+    },
+    "airbnb": {
+      "verified": true,
+      "verificationBadge": "Empresa verificada",
+      "activeOffers": 6,
+      "lastPostDate": "2024-10-07",
+      "companyWebsite": "https://www.airbnb.com",
+      "rating": 4.3,
+      "reviewsCount": 156,
+      "employeeReviews": [
+        {
+          "author": "UX Designer en Airbnb",
+          "rating": 4,
+          "comment": "Diseño que impacta millones, pero demanda alta"
+        }
+      ]
+    },
+    "openai": {
+      "verified": true,
+      "verificationBadge": "Empresa verificada",
+      "activeOffers": 7,
+      "lastPostDate": "2024-10-13",
+      "companyWebsite": "https://www.openai.com",
+      "rating": 4.9,
+      "reviewsCount": 127,
+      "employeeReviews": [
+        {
+          "author": "ML Engineer en OpenAI",
+          "rating": 5,
+          "comment": "Trabajar en IA de frontera, ambiente de investigación"
+        }
+      ]
+    },
+    "adobe": {
+      "verified": true,
+      "verificationBadge": "Empresa verificada",
+      "activeOffers": 9,
+      "lastPostDate": "2024-10-06",
+      "companyWebsite": "https://www.adobe.com",
+      "rating": 4.4,
+      "reviewsCount": 234,
+      "employeeReviews": [
+        {
+          "author": "QA Engineer en Adobe",
+          "rating": 4,
+          "comment": "Herramientas excelentes para la calidad del software"
+        }
+      ]
+    },
+    "twitter": {
+      "verified": false,
+      "verificationBadge": null,
+      "activeOffers": 3,
+      "lastPostDate": "2024-10-14",
+      "companyWebsite": "https://www.twitter.com",
+      "rating": 3.8,
+      "reviewsCount": 89,
+      "employeeReviews": [
+        {
+          "author": "iOS Developer en Twitter",
+          "rating": 3,
+          "comment": "Cambios organizativos frecuentes, pero oportunidades interesantes"
+        }
+      ]
+    },
+    "binance": {
+      "verified": true,
+      "verificationBadge": "Empresa verificada",
+      "activeOffers": 11,
+      "lastPostDate": "2024-10-14",
+      "companyWebsite": "https://www.binance.com",
+      "rating": 4.2,
+      "reviewsCount": 143,
+      "employeeReviews": [
+        {
+          "author": "Blockchain Developer en Binance",
+          "rating": 4,
+          "comment": "Tecnología innovadora, sector volátil"
+        }
+      ]
+    }
+  },
+  "trustLevels": {
+    "excellent": {
+      "minRating": 4.7,
+      "color": "#10b981",
+      "label": "Excelente",
+      "emoji": "🟢"
+    },
+    "veryGood": {
+      "minRating": 4.0,
+      "maxRating": 4.6,
+      "color": "#f59e0b",
+      "label": "Muy Bueno",
+      "emoji": "🟡"
+    },
+    "good": {
+      "minRating": 3.0,
+      "maxRating": 3.9,
+      "color": "#f97316",
+      "label": "Bueno",
+      "emoji": "🟠"
+    },
+    "fair": {
+      "minRating": 0,
+      "maxRating": 2.9,
+      "color": "#ef4444",
+      "label": "Regular",
+      "emoji": "🔴"
+    }
+  },
+  "statistics": {
+    "totalCompanies": 10,
+    "verifiedCompanies": 9,
+    "averageRating": 4.53,
+    "totalActiveOffers": 93,
+    "totalReviews": 2831,
+    "topRatedCompanies": ["apple", "openai", "microsoft"],
+    "mostActiveCompanies": ["microsoft", "amazon", "spotify"]
+  },
+  "sampleData": {
+    "highTrust": {
+      "company": "Apple",
+      "verified": true,
+      "rating": 4.9,
+      "activeOffers": 5,
+      "trustScore": 98,
+      "status": "Muy recomendada"
+    },
+    "mediumTrust": {
+      "company": "Spotify",
+      "verified": true,
+      "rating": 4.5,
+      "activeOffers": 14,
+      "trustScore": 78,
+      "status": "Recomendada"
+    },
+    "lowTrust": {
+      "company": "Twitter",
+      "verified": false,
+      "rating": 3.8,
+      "activeOffers": 3,
+      "trustScore": 55,
+      "status": "Considerar con cuidado"
+    }
+  },
+  "filters": {
+    "byVerification": {
+      "verified": {
+        "label": "Solo empresas verificadas",
+        "count": 9
+      },
+      "unverified": {
+        "label": "Empresas sin verificar",
+        "count": 1
+      }
+    },
+    "byRating": {
+      "excellent": {
+        "label": "4.7+ ⭐⭐⭐⭐⭐",
+        "companies": ["apple", "openai", "microsoft"],
+        "count": 3
+      },
+      "veryGood": {
+        "label": "4.0-4.6 ⭐⭐⭐⭐",
+        "companies": ["amazon", "netflix", "spotify", "adobe", "airbnb"],
+        "count": 5
+      },
+      "good": {
+        "label": "3.0-3.9 ⭐⭐⭐",
+        "companies": ["binance", "twitter"],
+        "count": 2
+      }
+    },
+    "byActiveOffers": {
+      "high": {
+        "label": "10+ ofertas activas",
+        "companies": ["microsoft", "amazon", "spotify"],
+        "count": 3
+      },
+      "medium": {
+        "label": "5-9 ofertas activas",
+        "companies": ["netflix", "adobe", "openai"],
+        "count": 3
+      },
+      "low": {
+        "label": "Menos de 5 ofertas",
+        "companies": ["apple", "airbnb", "twitter", "binance"],
+        "count": 4
+      }
+    }
+  },
+  "timeRanges": {
+    "justNow": {
+      "label": "Hace unos minutos",
+      "daysAgo": 0
+    },
+    "today": {
+      "label": "Hoy",
+      "daysAgo": 0
+    },
+    "yesterday": {
+      "label": "Ayer",
+      "daysAgo": 1
+    },
+    "thisWeek": {
+      "label": "Esta semana",
+      "daysAgo": 7
+    },
+    "thisMonth": {
+      "label": "Este mes",
+      "daysAgo": 30
+    },
+    "older": {
+      "label": "Hace más de un mes",
+      "daysAgo": 30
+    }
+  },
+  "testimonials": {
+    "category1": {
+      "title": "Empresas de Primera Clase",
+      "description": "Las más confiables para tu carrera",
+      "companies": ["apple", "microsoft", "openai"]
+    },
+    "category2": {
+      "title": "Empresas Sólidas",
+      "description": "Buen ambiente y oportunidades",
+      "companies": ["amazon", "netflix", "spotify", "adobe"]
+    },
+    "category3": {
+      "title": "Empresas en Evolución",
+      "description": "Cambios significativos recientes",
+      "companies": ["twitter", "binance"]
+    }
+  },
+  "ratingDistribution": {
+    "5stars": {
+      "count": 3,
+      "percentage": 30,
+      "companies": ["apple", "openai", "microsoft"]
+    },
+    "4stars": {
+      "count": 5,
+      "percentage": 50,
+      "companies": ["amazon", "netflix", "spotify", "adobe", "airbnb"]
+    },
+    "3stars": {
+      "count": 2,
+      "percentage": 20,
+      "companies": ["binance", "twitter"]
+    }
+  },
+  "benchmarks": {
+    "verificationRate": 90,
+    "avgRating": 4.53,
+    "avgActiveOffers": 9.3,
+    "avgReviewsPerCompany": 283,
+    "industryStandard": {
+      "minRating": 4.0,
+      "minActiveOffers": 5,
+      "minReviews": 50
+    }
+  }
+}

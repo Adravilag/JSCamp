@@ -1,0 +1,222 @@
+[
+  {
+    "id": "job-2",
+    "title": "Data Analyst",
+    "company": "Amazon",
+    "location": "Madrid",
+    "description": "We're looking for a Data Analyst passionate about turning information into valuable insights. You'll work with large datasets and advanced analytics tools.",
+    "details": {
+      "technologies": ["Python", "SQL", "Tableau"],
+      "workMode": "onsite",
+      "level": "mid",
+      "area": "data",
+      "salary": "30000-50000",
+      "city": "Madrid"
+    },
+    "metadata": {
+      "postedDate": "2025-10-10T09:00:00Z",
+      "urgency": "medium",
+      "deadline": "2025-11-30T23:59:59Z",
+      "vacancies": 5,
+      "featured": false
+    }
+  },
+  {
+    "id": "job-3",
+    "title": "Cybersecurity Specialist",
+    "company": "Microsoft",
+    "location": "Hybrid",
+    "description": "Protect critical infrastructure and respond to incidents as part of our security team. Help keep millions of users safe.",
+    "details": {
+      "technologies": ["Security", "Pentesting", "ISO 27001"],
+      "workMode": "hybrid",
+      "level": "senior",
+      "area": "security",
+      "salary": "70000-90000",
+      "city": "Remote"
+    },
+    "metadata": {
+      "postedDate": "2025-10-14T14:30:00Z",
+      "urgency": "high",
+      "deadline": "2025-10-20T23:59:59Z",
+      "vacancies": 2,
+      "featured": true
+    }
+  },
+  {
+    "id": "job-4",
+    "title": "Mobile App Developer",
+    "company": "Netflix",
+    "location": "Remote",
+    "description": "Develop innovative mobile applications for millions of users around the world. Work in an agile environment with the latest mobile technologies.",
+    "details": {
+      "technologies": ["React Native", "Flutter", "iOS", "Android"],
+      "workMode": "remote",
+      "level": "mid",
+      "area": "mobile",
+      "salary": "50000-70000",
+      "city": "Remote"
+    },
+    "metadata": {
+      "postedDate": "2025-10-08T10:15:00Z",
+      "urgency": "medium",
+      "deadline": "2025-12-15T23:59:59Z",
+      "vacancies": 8,
+      "featured": false
+    }
+  },
+  {
+    "id": "job-5",
+    "title": "Product Manager",
+    "company": "Apple",
+    "location": "Barcelona",
+    "description": "Lead the product lifecycle from concept to launch. Collaborate with multidisciplinary teams and define product strategy.",
+    "details": {
+      "technologies": ["Product Management", "Agile", "Scrum"],
+      "workMode": "onsite",
+      "level": "senior",
+      "area": "product",
+      "salary": "90000-999999",
+      "city": "Barcelona"
+    },
+    "metadata": {
+      "postedDate": "2025-10-12T11:00:00Z",
+      "urgency": "low",
+      "deadline": "2025-12-31T23:59:59Z",
+      "vacancies": 3,
+      "featured": false
+    }
+  },
+  {
+    "id": "job-6",
+    "title": "Frontend Developer",
+    "company": "Spotify",
+    "location": "Valencia",
+    "description": "Join our frontend team and build responsive, modern user interfaces. Work with top frameworks and contribute to high-traffic products.",
+    "details": {
+      "technologies": ["Vue.js", "TypeScript", "Tailwind CSS"],
+      "workMode": "hybrid",
+      "level": "junior",
+      "area": "frontend",
+      "salary": "28000-40000",
+      "city": "Valencia"
+    },
+    "metadata": {
+      "postedDate": "2025-10-13T08:30:00Z",
+      "urgency": "medium",
+      "deadline": "2025-11-15T23:59:59Z",
+      "vacancies": 4,
+      "featured": false
+    }
+  },
+  {
+    "id": "job-9",
+    "title": "UX/UI Designer",
+    "company": "Airbnb",
+    "location": "Barcelona",
+    "description": "Design exceptional digital experiences, from wireframes to interactive prototypes. Work closely with product and engineering teams.",
+    "details": {
+      "technologies": ["Figma", "Adobe XD", "Sketch", "Prototyping"],
+      "workMode": "onsite",
+      "level": "mid",
+      "area": "design",
+      "salary": "35000-50000",
+      "city": "Barcelona"
+    },
+    "metadata": {
+      "postedDate": "2025-10-09T12:45:00Z",
+      "urgency": "medium",
+      "deadline": "2025-11-20T23:59:59Z",
+      "vacancies": 6,
+      "featured": false
+    }
+  },
+  {
+    "id": "job-10",
+    "title": "Machine Learning Engineer",
+    "company": "OpenAI",
+    "location": "Remote",
+    "description": "Build and deploy advanced ML and AI models. Work with large datasets and cutting-edge algorithms.",
+    "details": {
+      "technologies": ["Python", "TensorFlow", "PyTorch", "MLOps"],
+      "workMode": "remote",
+      "level": "senior",
+      "area": "data",
+      "salary": "70000-95000",
+      "city": "Remote"
+    },
+    "metadata": {
+      "postedDate": "2025-10-15T07:00:00Z",
+      "urgency": "high",
+      "deadline": "2025-10-22T23:59:59Z",
+      "vacancies": 1,
+      "featured": true
+    }
+  },
+  {
+    "id": "job-11",
+    "title": "QA Automation Engineer",
+    "company": "Adobe",
+    "location": "Seville",
+    "description": "Automate testing and ensure software quality. Experience with modern testing frameworks required.",
+    "details": {
+      "technologies": ["Selenium", "Cypress", "Jest", "TestNG"],
+      "workMode": "hybrid",
+      "level": "junior",
+      "area": "qa",
+      "salary": "30000-45000",
+      "city": "Seville"
+    },
+    "metadata": {
+      "postedDate": "2025-10-11T13:20:00Z",
+      "urgency": "low",
+      "deadline": "2025-12-01T23:59:59Z",
+      "vacancies": 7,
+      "featured": false
+    }
+  },
+  {
+    "id": "job-13",
+    "title": "iOS Developer",
+    "company": "Twitter",
+    "location": "Barcelona",
+    "description": "Build native iOS apps with exceptional user experiences for millions of users.",
+    "details": {
+      "technologies": ["Swift", "SwiftUI", "Xcode", "Core Data"],
+      "workMode": "onsite",
+      "level": "mid",
+      "area": "mobile",
+      "salary": "45000-60000",
+      "city": "Barcelona"
+    },
+    "metadata": {
+      "postedDate": "2025-10-14T16:10:00Z",
+      "urgency": "high",
+      "deadline": "2025-10-25T23:59:59Z",
+      "vacancies": 2,
+      "featured": false
+    }
+  },
+  {
+    "id": "job-14",
+    "title": "Blockchain Developer",
+    "company": "Binance",
+    "location": "Remote",
+    "description": "Develop blockchain solutions and smart contracts for next-generation decentralized applications.",
+    "details": {
+      "technologies": ["Solidity", "Ethereum", "Web3.js", "Smart Contracts"],
+      "workMode": "remote",
+      "level": "senior",
+      "area": "backend",
+      "salary": "80000-110000",
+      "city": "Remote"
+    },
+    "metadata": {
+      "postedDate": "2025-10-15T09:30:00Z",
+      "urgency": "high",
+      "deadline": "2025-10-21T23:59:59Z",
+      "vacancies": 1,
+      "featured": true
+    }
+  }
+]

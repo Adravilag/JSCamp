@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de Iconos de Tecnología</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      padding: 2rem;
+      background: #f8fafc;
+    }
+    .test-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .test-section {
+      margin-bottom: 2rem;
+    }
+    .test-section h2 {
+      color: #1e293b;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e2e8f0;
+    }
+    .test-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .test-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem;
+      background: #f8fafc;
+      border-radius: 6px;
+      border: 1px solid #e2e8f0;
+    }
+    .test-icon {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+    .test-name {
+      font-size: 0.875rem;
+      color: #475569;
+      font-weight: 500;
+    }
+    .no-icon {
+      opacity: 0.5;
+      font-style: italic;
+    }
+    .stats {
+      display: flex;
+      gap: 2rem;
+      padding: 1rem;
+      background: #f1f5f9;
+      border-radius: 6px;
+      margin-bottom: 2rem;
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+    }
+    .stat-value {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+    .stat-label {
+      font-size: 0.875rem;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-container">
+    <h1>🧪 Test de Iconos de Tecnología</h1>
+    <p style="color: #64748b; margin-bottom: 2rem;">
+      Esta página muestra todas las tecnologías mapeadas y sus iconos SVG del sprite.
+    </p>
+
+    <div class="stats" id="stats">
+      <div class="stat">
+        <span class="stat-value" id="totalTech">-</span>
+        <span class="stat-label">Total Tecnologías</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="withIcon">-</span>
+        <span class="stat-label">Con Icono</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="withoutIcon">-</span>
+        <span class="stat-label">Sin Icono</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="coverage">-</span>
+        <span class="stat-label">Cobertura</span>
+      </div>
+    </div>
+
+    <!-- Frontend -->
+    <div class="test-section">
+      <h2>🎨 Frontend Frameworks</h2>
+      <div class="test-grid" id="frontend"></div>
+    </div>
+
+    <!-- Backend -->
+    <div class="test-section">
+      <h2>⚙️ Backend</h2>
+      <div class="test-grid" id="backend"></div>
+    </div>
+
+    <!-- Databases -->
+    <div class="test-section">
+      <h2>🗄️ Databases</h2>
+      <div class="test-grid" id="databases"></div>
+    </div>
+
+    <!-- DevOps -->
+    <div class="test-section">
+      <h2>☁️ DevOps & Cloud</h2>
+      <div class="test-grid" id="devops"></div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="test-section">
+      <h2>📱 Mobile</h2>
+      <div class="test-grid" id="mobile"></div>
+    </div>
+
+    <!-- Testing -->
+    <div class="test-section">
+      <h2>🧪 Testing</h2>
+      <div class="test-grid" id="testing"></div>
+    </div>
+
+    <!-- Design -->
+    <div class="test-section">
+      <h2>🎨 Design Tools</h2>
+      <div class="test-grid" id="design"></div>
+    </div>
+
+    <!-- Other -->
+    <div class="test-section">
+      <h2>🔧 Otros</h2>
+      <div class="test-grid" id="other"></div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { createTechIcon, hasTechIcon, TECH_ICON_MAP } from './js/tech-icons.js';
+
+    const technologies = {
+      frontend: [
+        'React', 'React Native', 'Angular', 'Vue.js', 'Svelte', 
+        'Next.js', 'JavaScript', 'TypeScript', 'HTML', 'CSS'
+      ],
+      backend: [
+        'Node.js', 'Express', 'Python', 'Django', 'Flask',
+        'Java', 'C#', 'PHP', 'Ruby', 'Go', 'Rust'
+      ],
+      databases: [
+        'MongoDB', 'MySQL', 'PostgreSQL', 'Redis', 
+        'Elasticsearch', 'SQL'
+      ],
+      devops: [
+        'Docker', 'Kubernetes', 'AWS', 'Azure', 'Google Cloud',
+        'Jenkins', 'CircleCI', 'Ansible', 'Terraform', 'Git', 'GitHub'
+      ],
+      mobile: [
+        'iOS', 'Android', 'Swift', 'Flutter', 'Kotlin'
+      ],
+      testing: [
+        'Jest', 'Cypress', 'Selenium', 'Mocha', 'Jasmine'
+      ],
+      design: [
+        'Figma', 'Sketch', 'Adobe XD', 'Photoshop', 'Illustrator'
+      ],
+      other: [
+        'GraphQL', 'Apollo', 'Webpack', 'Babel', 'ESLint',
+        'Tailwind CSS', 'Bootstrap', 'Sass', 'TensorFlow', 'PyTorch'
+      ]
+    };
+
+    function renderTech(techName, containerId) {
+      const container = document.getElementById(containerId);
+      const hasIcon = hasTechIcon(techName);
+      const icon = createTechIcon(techName);
+      
+      const item = document.createElement('div');
+      item.className = `test-item ${!hasIcon ? 'no-icon' : ''}`;
+      
+      if (hasIcon) {
+        // Crear SVG icon manualmente para el test
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.classList.add('test-icon');
+        svg.setAttribute('aria-hidden', 'true');
+        
+        const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+        const iconId = icon.match(/assets\/sprite\.svg#([^"]+)/)?.[1];
+        if (iconId) {
+          use.setAttribute('href', `assets/sprite.svg#${iconId}`);
+          svg.appendChild(use);
+          item.appendChild(svg);
+        }
+      } else {
+        item.innerHTML += '<span style="width: 24px; text-align: center;">❌</span>';
+      }
+      
+      const name = document.createElement('span');
+      name.className = 'test-name';
+      name.textContent = techName;
+      item.appendChild(name);
+      
+      container.appendChild(item);
+      
+      return hasIcon;
+    }
+
+    // Renderizar todas las tecnologías
+    let totalWithIcon = 0;
+    let totalTech = 0;
+
+    Object.entries(technologies).forEach(([category, techs]) => {
+      techs.forEach(tech => {
+        const hasIcon = renderTech(tech, category);
+        if (hasIcon) totalWithIcon++;
+        totalTech++;
+      });
+    });
+
+    // Actualizar estadísticas
+    document.getElementById('totalTech').textContent = totalTech;
+    document.getElementById('withIcon').textContent = totalWithIcon;
+    document.getElementById('withoutIcon').textContent = totalTech - totalWithIcon;
+    document.getElementById('coverage').textContent = 
+      `${Math.round((totalWithIcon / totalTech) * 100)}%`;
+
+    console.log('✅ Test de iconos completado');
+    console.log(`📊 Cobertura: ${totalWithIcon}/${totalTech} (${Math.round((totalWithIcon / totalTech) * 100)}%)`);
+    console.log(`📦 Total de mapeos en TECH_ICON_MAP:`, Object.keys(TECH_ICON_MAP).length);
+  </script>
+</body>
+</html>

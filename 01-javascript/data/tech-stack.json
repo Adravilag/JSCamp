@@ -1,0 +1,1013 @@
+{
+  "stack": {
+    "frontend": {
+      "languages": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "version": "ES2024",
+          "type": "Language",
+          "category": "Core",
+          "description": "Lenguaje de programación principal para desarrollo web",
+          "usage": "Lógica de aplicación, interactividad del cliente",
+          "proficiency": "Muy Alta",
+          "yearsUsed": 25
+        },
+        {
+          "id": "html5",
+          "name": "HTML5",
+          "version": "5.3",
+          "type": "Markup",
+          "category": "Core",
+          "description": "Estructura y semántica del contenido web",
+          "usage": "Estructura de componentes y páginas",
+          "proficiency": "Muy Alta",
+          "yearsUsed": 15
+        },
+        {
+          "id": "css3",
+          "name": "CSS3",
+          "version": "4",
+          "type": "Styling",
+          "category": "Core",
+          "description": "Estilos y diseño responsive",
+          "usage": "Diseño visual, animaciones, layout",
+          "proficiency": "Muy Alta",
+          "yearsUsed": 15
+        }
+      ],
+      "frameworks": [
+        {
+          "id": "web-components",
+          "name": "Web Components",
+          "version": "V1",
+          "type": "Framework",
+          "category": "Component Architecture",
+          "description": "Estándar de componentes reutilizables para web",
+          "features": [
+            "Custom Elements",
+            "Shadow DOM",
+            "HTML Templates",
+            "Slots"
+          ],
+          "usage": "Componentes personalizados (devjobs-card, devjobs-avatar)",
+          "proficiency": "Alta",
+          "advantages": [
+            "Sin dependencias externas",
+            "Reutilizable en cualquier proyecto",
+            "Mejor rendimiento",
+            "Estándar de la industria"
+          ]
+        }
+      ],
+      "libraries": [
+        {
+          "id": "modular-js",
+          "name": "JavaScript Modular",
+          "type": "Architecture",
+          "category": "Code Organization",
+          "description": "Arquitectura de módulos ES6",
+          "modules": [
+            "api.js",
+            "filters.js",
+            "render.js",
+            "events.js",
+            "utils.js",
+            "config.js",
+            "tooltips.js"
+          ],
+          "benefits": [
+            "Separación de responsabilidades",
+            "Código mantenible",
+            "Fácil testing",
+            "Reutilización de código"
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "id": "fetch-api",
+          "name": "Fetch API",
+          "type": "API",
+          "category": "HTTP Client",
+          "description": "API nativa para realizar peticiones HTTP",
+          "usage": "Obtener datos de empleo desde JSON"
+        }
+      ]
+    },
+    "backend": {
+      "languages": [
+        {
+          "id": "json",
+          "name": "JSON",
+          "type": "Data Format",
+          "category": "Data Interchange",
+          "description": "Formato de intercambio de datos ligero",
+          "usage": "Almacenamiento y transmisión de datos de empleos",
+          "files": [
+            "jobs.json",
+            "jobs-with-metadata.json",
+            "localidades.json"
+          ]
+        }
+      ],
+      "mockData": [
+        {
+          "id": "jobs-api",
+          "name": "Jobs Mock API",
+          "type": "Mock",
+          "description": "Datos simulados de empleos para desarrollo",
+          "source": "JSON local",
+          "dataStructure": {
+            "id": "Identificador único",
+            "title": "Título del puesto",
+            "company": "Nombre empresa",
+            "description": "Descripción del trabajo",
+            "details": {
+              "technologies": "Array de tecnologías",
+              "salary": "Rango salarial",
+              "city": "Ubicación",
+              "workMode": "remote/onsite/hybrid",
+              "area": "frontend/backend/fullstack/devops/mobile/qa",
+              "level": "junior/mid/senior/lead"
+            },
+            "metadata": {
+              "postedDate": "Fecha de publicación",
+              "deadline": "Fecha límite",
+              "urgency": "Nivel de urgencia",
+              "featured": "Destacado",
+              "vacancies": "Número de vacantes"
+            }
+          }
+        }
+      ]
+    },
+    "ui": {
+      "components": [
+        {
+          "id": "devjobs-card",
+          "name": "DevJobs Card",
+          "type": "Web Component",
+          "file": "js/web-components/devjobs-card.js",
+          "description": "Componente principal para mostrar oferta de empleo",
+          "features": [
+            "Renderizado de información de empleo",
+            "Eventos personalizados",
+            "Shadow DOM para encapsulación",
+            "Propiedades y atributos observables"
+          ],
+          "customEvents": [
+            "job-apply",
+            "job-favorite"
+          ]
+        },
+        {
+          "id": "devjobs-avatar",
+          "name": "DevJobs Avatar",
+          "type": "Web Component",
+          "file": "js/web-components/devjobs-avatar-element.js",
+          "description": "Componente para mostrar avatares de empresas",
+          "features": [
+            "Carga de imagen con fallback",
+            "Formas personalizables",
+            "Tamaños responsivos",
+            "Integración con unavatar.io"
+          ]
+        }
+      ],
+      "tooltips": [
+        {
+          "id": "tooltip-system",
+          "name": "Sistema de Tooltips Contextual",
+          "file": "js/tooltips.js",
+          "type": "System",
+          "description": "Sistema interactivo de tooltips con información contextual",
+          "triggeredBy": "click",
+          "types": [
+            {
+              "type": "company",
+              "icon": "🏢",
+              "data": "Información de empresa (rating, empleados, beneficios)"
+            },
+            {
+              "type": "tech",
+              "icon": "💻",
+              "data": "Información de tecnología (popularidad, demanda, curva aprendizaje)"
+            },
+            {
+              "type": "salary",
+              "icon": "💶",
+              "data": "Rango salarial y detalles"
+            },
+            {
+              "type": "location",
+              "icon": "📍",
+              "data": "Ubicación y zona horaria"
+            },
+            {
+              "type": "workmode",
+              "icon": "💼",
+              "data": "Modalidad de trabajo (remoto, presencial, híbrido)"
+            },
+            {
+              "type": "area",
+              "icon": "🎨",
+              "data": "Área de especialización (frontend, backend, etc.)"
+            },
+            {
+              "type": "experience",
+              "icon": "⭐",
+              "data": "Nivel de experiencia requerido"
+            }
+          ],
+          "features": [
+            "Animaciones suave (fade in/out)",
+            "Posicionamiento automático",
+            "Cierre al hacer click fuera",
+            "Información contextual enriquecida"
+          ]
+        }
+      ],
+      "styling": [
+        {
+          "id": "css-architecture",
+          "name": "Arquitectura CSS",
+          "type": "Styling System",
+          "approach": "CSS Custom Properties (Variables)",
+          "file": "styles.css",
+          "description": "Sistema modular de estilos con variables CSS",
+          "sections": [
+            "Theme (colores, tamaños, espaciado)",
+            "Components (tarjetas, filtros, tooltips)",
+            "Animations (transiciones, pulsaciones)",
+            "Responsive Design (mobile first)",
+            "Dark/Light Mode Support"
+          ],
+          "features": [
+            "Variables CSS reutilizables",
+            "Animaciones fluidas",
+            "Diseño responsivo",
+            "Modo oscuro soportado"
+          ]
+        }
+      ]
+    },
+    "features": {
+      "filtering": [
+        {
+          "id": "modalidad-filter",
+          "name": "Filtro por Modalidad",
+          "file": "js/filters.js",
+          "types": ["remote", "onsite", "hybrid"],
+          "description": "Filtrar empleos por tipo de trabajo"
+        },
+        {
+          "id": "tech-filter",
+          "name": "Filtro por Tecnología",
+          "file": "js/tech-filter.js",
+          "description": "Filtrar empleos por stack tecnológico",
+          "features": [
+            "Búsqueda por palabra clave",
+            "Multi-select",
+            "Iconos de tecnología"
+          ]
+        },
+        {
+          "id": "city-filter",
+          "name": "Filtro por Ciudad",
+          "file": "js/city-filter.js",
+          "description": "Filtrar empleos por ubicación",
+          "dataSource": "localidades.json"
+        },
+        {
+          "id": "salary-filter",
+          "name": "Filtro por Salario",
+          "file": "js/filters.js",
+          "description": "Filtrar empleos por rango salarial"
+        }
+      ],
+      "search": [
+        {
+          "id": "url-search",
+          "name": "URL Search Parameters",
+          "file": "js/url.js",
+          "description": "Persistencia de filtros en URL",
+          "features": [
+            "Compartir búsquedas filtradas",
+            "Estado persistente",
+            "Deep linking"
+          ]
+        }
+      ],
+      "ui": [
+        {
+          "id": "tech-icons",
+          "name": "Tech Icons System",
+          "file": "js/tech-icons.js",
+          "description": "Sistema de iconos para tecnologías",
+          "features": [
+            "Iconos SVG",
+            "Asignación automática",
+            "Fallback para technologies desconocidas"
+          ]
+        },
+        {
+          "id": "application-feedback",
+          "name": "Application Feedback UI",
+          "file": "js/ui-feedback.js",
+          "description": "Sistema de notificaciones y feedback",
+          "features": [
+            "Notificaciones de postulación",
+            "Confirmaciones visuales",
+            "Estado de aplicación"
+          ]
+        }
+      ]
+    },
+    "architecture": {
+      "pattern": "Modular MVC-like",
+      "modules": [
+        {
+          "name": "API Layer",
+          "file": "js/api.js",
+          "responsibility": "Fetching and data management"
+        },
+        {
+          "name": "Filter Layer",
+          "files": ["js/filters.js", "js/tech-filter.js", "js/city-filter.js"],
+          "responsibility": "Filtering logic"
+        },
+        {
+          "name": "Render Layer",
+          "file": "js/render.js",
+          "responsibility": "DOM rendering"
+        },
+        {
+          "name": "Events Layer",
+          "file": "js/events.js",
+          "responsibility": "Event handling"
+        },
+        {
+          "name": "UI Layer",
+          "file": "js/ui-feedback.js",
+          "responsibility": "User feedback"
+        },
+        {
+          "name": "Utilities",
+          "file": "js/utils.js",
+          "responsibility": "Helper functions"
+        },
+        {
+          "name": "Configuration",
+          "file": "js/config.js",
+          "responsibility": "App configuration"
+        }
+      ]
+    },
+    "technologies": {
+      "frontend": [
+        {
+          "id": "react",
+          "name": "React",
+          "type": "Library",
+          "category": "Frontend",
+          "popularity": "Muy Alta",
+          "description": "Biblioteca de JavaScript para construir interfaces de usuario.",
+          "maintainedBy": "Meta",
+          "learning": "Media",
+          "jobDemand": "Muy Alta",
+          "yearsUsed": 9,
+          "useCases": ["SPA", "UI Components", "Progressive Web Apps"]
+        },
+        {
+          "id": "vue.js",
+          "name": "Vue.js",
+          "type": "Framework",
+          "category": "Frontend",
+          "popularity": "Alta",
+          "description": "Framework progresivo para construir interfaces de usuario.",
+          "maintainedBy": "Evan You & Community",
+          "learning": "Fácil-Media",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 7,
+          "useCases": ["SPA", "Progressive Enhancement", "Component-based UI"]
+        },
+        {
+          "id": "angular",
+          "name": "Angular",
+          "type": "Framework",
+          "category": "Frontend",
+          "popularity": "Alta",
+          "description": "Framework completo para aplicaciones web empresariales.",
+          "maintainedBy": "Google",
+          "learning": "Alta",
+          "jobDemand": "Alta",
+          "yearsUsed": 10,
+          "useCases": ["Enterprise Apps", "Large-scale Projects", "Type-safe Development"]
+        },
+        {
+          "id": "reactnative",
+          "name": "React Native",
+          "type": "Framework",
+          "category": "Mobile",
+          "popularity": "Alta",
+          "description": "Framework para construir aplicaciones móviles nativas con JavaScript.",
+          "maintainedBy": "Meta",
+          "learning": "Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 9,
+          "useCases": ["iOS Apps", "Android Apps", "Cross-platform Mobile", "Code Reusability"]
+        }
+      ],
+      "languages": [
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "type": "Language",
+          "category": "Full Stack",
+          "popularity": "Muy Alta",
+          "description": "Lenguaje de programación esencial para desarrollo web.",
+          "maintainedBy": "ECMA International",
+          "learning": "Media",
+          "jobDemand": "Muy Alta",
+          "yearsUsed": 28,
+          "useCases": ["Frontend", "Backend (Node.js)", "Scripting", "Automation"]
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "type": "Language",
+          "category": "Full Stack",
+          "popularity": "Alta",
+          "description": "Superset de JavaScript con tipado estático.",
+          "maintainedBy": "Microsoft",
+          "learning": "Media-Alta",
+          "jobDemand": "Alta",
+          "yearsUsed": 8,
+          "useCases": ["Type-safe Development", "Large Projects", "Frontend & Backend"]
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "type": "Language",
+          "category": "Backend / Data",
+          "popularity": "Muy Alta",
+          "description": "Lenguaje versátil, popular en IA, data science y backend.",
+          "maintainedBy": "Python Software Foundation",
+          "learning": "Fácil",
+          "jobDemand": "Muy Alta",
+          "yearsUsed": 20,
+          "useCases": ["Data Science", "AI/ML", "Backend", "Automation", "Scientific Computing"]
+        }
+      ],
+      "runtimes": [
+        {
+          "id": "node.js",
+          "name": "Node.js",
+          "type": "Runtime",
+          "category": "Backend",
+          "popularity": "Muy Alta",
+          "description": "Entorno de ejecución de JavaScript del lado del servidor.",
+          "maintainedBy": "OpenJS Foundation",
+          "learning": "Media",
+          "jobDemand": "Muy Alta",
+          "yearsUsed": 14,
+          "useCases": ["Backend Servers", "APIs", "Real-time Apps", "CLI Tools"]
+        }
+      ],
+      "devops": [
+        {
+          "id": "docker",
+          "name": "Docker",
+          "type": "Platform",
+          "category": "DevOps",
+          "popularity": "Muy Alta",
+          "description": "Plataforma de contenedores para despliegue de aplicaciones.",
+          "maintainedBy": "Docker Inc.",
+          "learning": "Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 10,
+          "useCases": ["Containerization", "Microservices", "CI/CD", "Development Environments"]
+        }
+      ],
+      "cloud": [
+        {
+          "id": "aws",
+          "name": "AWS",
+          "type": "Cloud Platform",
+          "category": "Cloud/DevOps",
+          "popularity": "Muy Alta",
+          "description": "Plataforma de servicios en la nube más completa del mercado.",
+          "maintainedBy": "Amazon",
+          "learning": "Alta",
+          "jobDemand": "Muy Alta",
+          "yearsUsed": 8,
+          "services": ["EC2", "S3", "Lambda", "RDS", "CloudFront"],
+          "useCases": ["Cloud Infrastructure", "Serverless", "Databases", "CDN"]
+        }
+      ],
+      "databases": [
+        {
+          "id": "sql",
+          "name": "SQL",
+          "type": "Language",
+          "category": "Database",
+          "popularity": "Muy Alta",
+          "description": "Lenguaje estándar para consultas de bases de datos relacionales.",
+          "maintainedBy": "ISO/IEC",
+          "learning": "Media",
+          "jobDemand": "Muy Alta",
+          "yearsUsed": 30,
+          "useCases": ["Data Querying", "Database Management", "Analytics", "Reporting"]
+        }
+      ],
+      "analytics": [
+        {
+          "id": "tableau",
+          "name": "Tableau",
+          "type": "Tool",
+          "category": "Analytics & BI",
+          "popularity": "Alta",
+          "description": "Plataforma de visualización de datos y business intelligence.",
+          "maintainedBy": "Salesforce",
+          "learning": "Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 12,
+          "useCases": ["Data Visualization", "Business Intelligence", "Analytics", "Dashboards"]
+        }
+      ],
+      "ai-ml": [
+        {
+          "id": "tensorflow",
+          "name": "TensorFlow",
+          "type": "Framework",
+          "category": "Machine Learning",
+          "popularity": "Muy Alta",
+          "description": "Plataforma open-source para machine learning y deep learning.",
+          "maintainedBy": "Google",
+          "learning": "Alta",
+          "jobDemand": "Alta",
+          "yearsUsed": 8,
+          "useCases": ["Deep Learning", "Neural Networks", "Computer Vision", "NLP"]
+        },
+        {
+          "id": "pytorch",
+          "name": "PyTorch",
+          "type": "Framework",
+          "category": "Machine Learning",
+          "popularity": "Muy Alta",
+          "description": "Framework Python para machine learning basado en dynamic computation graphs.",
+          "maintainedBy": "Meta",
+          "learning": "Alta",
+          "jobDemand": "Alta",
+          "yearsUsed": 6,
+          "useCases": ["Deep Learning", "Research", "Computer Vision", "NLP"]
+        }
+      ],
+      "devops-advanced": [
+        {
+          "id": "mlops",
+          "name": "MLOps",
+          "type": "Practice",
+          "category": "DevOps",
+          "popularity": "Media-Alta",
+          "description": "Prácticas de DevOps aplicadas a machine learning y modelos de IA.",
+          "maintainedBy": "Community",
+          "learning": "Alta",
+          "jobDemand": "Alta",
+          "yearsUsed": 3,
+          "useCases": ["Model Deployment", "Model Monitoring", "Automation", "Pipeline Management"]
+        }
+      ],
+      "mobile": [
+        {
+          "id": "flutter",
+          "name": "Flutter",
+          "type": "Framework",
+          "category": "Mobile",
+          "popularity": "Alta",
+          "description": "Framework para desarrollo de aplicaciones móviles cross-platform con Dart.",
+          "maintainedBy": "Google",
+          "learning": "Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 5,
+          "useCases": ["iOS Apps", "Android Apps", "Cross-platform Mobile", "UI Widgets"]
+        },
+        {
+          "id": "ios",
+          "name": "iOS",
+          "type": "Platform",
+          "category": "Mobile",
+          "popularity": "Alta",
+          "description": "Sistema operativo móvil de Apple para iPhone, iPad y dispositivos.",
+          "maintainedBy": "Apple",
+          "learning": "Alta",
+          "jobDemand": "Alta",
+          "yearsUsed": 14,
+          "useCases": ["Native iOS Apps", "App Store Distribution", "Device Hardware Access"]
+        },
+        {
+          "id": "android",
+          "name": "Android",
+          "type": "Platform",
+          "category": "Mobile",
+          "popularity": "Muy Alta",
+          "description": "Sistema operativo móvil abierto basado en Linux para millones de dispositivos.",
+          "maintainedBy": "Google",
+          "learning": "Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 14,
+          "useCases": ["Native Android Apps", "Play Store Distribution", "Diverse Hardware"]
+        },
+        {
+          "id": "swift",
+          "name": "Swift",
+          "type": "Language",
+          "category": "Mobile",
+          "popularity": "Alta",
+          "description": "Lenguaje de programación moderno para desarrollo de aplicaciones iOS, macOS, etc.",
+          "maintainedBy": "Apple",
+          "learning": "Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 9,
+          "useCases": ["iOS Development", "macOS Apps", "tvOS Apps", "Native Performance"]
+        },
+        {
+          "id": "swiftui",
+          "name": "SwiftUI",
+          "type": "Framework",
+          "category": "Mobile",
+          "popularity": "Alta",
+          "description": "Framework declarativo de Apple para construir interfaces en iOS, macOS, etc.",
+          "maintainedBy": "Apple",
+          "learning": "Media",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 4,
+          "useCases": ["Declarative UI", "Cross-platform Apple", "Modern iOS Development"]
+        }
+      ],
+      "development-tools": [
+        {
+          "id": "xcode",
+          "name": "Xcode",
+          "type": "IDE",
+          "category": "Development",
+          "popularity": "Alta",
+          "description": "Entorno de desarrollo integrado de Apple para iOS, macOS y watchOS.",
+          "maintainedBy": "Apple",
+          "learning": "Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 14,
+          "useCases": ["iOS Development", "macOS Development", "Debugging", "Performance Analysis"]
+        },
+        {
+          "id": "figma",
+          "name": "Figma",
+          "type": "Design Tool",
+          "category": "Design",
+          "popularity": "Muy Alta",
+          "description": "Herramienta colaborativa basada en web para diseño de interfaces.",
+          "maintainedBy": "Figma Inc.",
+          "learning": "Fácil",
+          "jobDemand": "Alta",
+          "yearsUsed": 6,
+          "useCases": ["UI/UX Design", "Prototyping", "Collaboration", "Component Systems"]
+        },
+        {
+          "id": "adobexd",
+          "name": "Adobe XD",
+          "type": "Design Tool",
+          "category": "Design",
+          "popularity": "Alta",
+          "description": "Herramienta de diseño de experiencia de usuario de Adobe.",
+          "maintainedBy": "Adobe",
+          "learning": "Fácil-Media",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 6,
+          "useCases": ["UI/UX Design", "Prototyping", "Animation", "User Testing"]
+        },
+        {
+          "id": "sketch",
+          "name": "Sketch",
+          "type": "Design Tool",
+          "category": "Design",
+          "popularity": "Alta",
+          "description": "Herramienta de diseño vectorial para Mac enfocada en UI/UX.",
+          "maintainedBy": "Sketch BV",
+          "learning": "Fácil",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 9,
+          "useCases": ["UI Design", "Icon Design", "Responsive Design", "Component Libraries"]
+        }
+      ],
+      "testing": [
+        {
+          "id": "selenium",
+          "name": "Selenium",
+          "type": "Framework",
+          "category": "QA/Testing",
+          "popularity": "Muy Alta",
+          "description": "Framework open-source para automatización de pruebas web.",
+          "maintainedBy": "Selenium Community",
+          "learning": "Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 16,
+          "useCases": ["Web Automation", "Cross-browser Testing", "Regression Testing"]
+        },
+        {
+          "id": "cypress",
+          "name": "Cypress",
+          "type": "Framework",
+          "category": "QA/Testing",
+          "popularity": "Alta",
+          "description": "Framework JavaScript para testing end-to-end con excelente developer experience.",
+          "maintainedBy": "Cypress.io",
+          "learning": "Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 5,
+          "useCases": ["End-to-End Testing", "Integration Testing", "Debugging"]
+        },
+        {
+          "id": "jest",
+          "name": "Jest",
+          "type": "Framework",
+          "category": "QA/Testing",
+          "popularity": "Muy Alta",
+          "description": "Framework de testing delightful para JavaScript con coverage integrado.",
+          "maintainedBy": "Meta",
+          "learning": "Fácil",
+          "jobDemand": "Alta",
+          "yearsUsed": 6,
+          "useCases": ["Unit Testing", "Snapshot Testing", "Integration Testing", "Code Coverage"]
+        },
+        {
+          "id": "testng",
+          "name": "TestNG",
+          "type": "Framework",
+          "category": "QA/Testing",
+          "popularity": "Alta",
+          "description": "Framework de testing para Java inspirado en TestUnit y NUnit.",
+          "maintainedBy": "Cedric Beust",
+          "learning": "Media",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 15,
+          "useCases": ["Unit Testing", "Integration Testing", "Data-driven Testing"]
+        }
+      ],
+      "frontend-styling": [
+        {
+          "id": "tailwindcss",
+          "name": "Tailwind CSS",
+          "type": "Framework",
+          "category": "Frontend",
+          "popularity": "Muy Alta",
+          "description": "Framework CSS utility-first para construcción rápida de interfaces modernas.",
+          "maintainedBy": "Tailwind Labs",
+          "learning": "Fácil",
+          "jobDemand": "Alta",
+          "yearsUsed": 5,
+          "useCases": ["Rapid UI Development", "Responsive Design", "Component Building"]
+        }
+      ],
+      "blockchain": [
+        {
+          "id": "solidity",
+          "name": "Solidity",
+          "type": "Language",
+          "category": "Blockchain",
+          "popularity": "Alta",
+          "description": "Lenguaje de programación para escribir smart contracts en Ethereum.",
+          "maintainedBy": "Ethereum Foundation",
+          "learning": "Media-Alta",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 8,
+          "useCases": ["Smart Contracts", "DeFi Applications", "Token Development"]
+        },
+        {
+          "id": "ethereum",
+          "name": "Ethereum",
+          "type": "Platform",
+          "category": "Blockchain",
+          "popularity": "Alta",
+          "description": "Plataforma blockchain descentralizada para smart contracts y DApps.",
+          "maintainedBy": "Ethereum Community",
+          "learning": "Alta",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 8,
+          "useCases": ["Smart Contracts", "DeFi", "NFTs", "Decentralized Apps"]
+        },
+        {
+          "id": "web3.js",
+          "name": "Web3.js",
+          "type": "Library",
+          "category": "Blockchain",
+          "popularity": "Alta",
+          "description": "Librería JavaScript para interactuar con nodos de Ethereum.",
+          "maintainedBy": "Ethereum Foundation",
+          "learning": "Media",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 7,
+          "useCases": ["Blockchain Interaction", "Smart Contract Calls", "Wallet Integration"]
+        },
+        {
+          "id": "smartcontracts",
+          "name": "Smart Contracts",
+          "type": "Practice",
+          "category": "Blockchain",
+          "popularity": "Alta",
+          "description": "Programas autoejecutable en blockchain que funcionan sin intermediarios.",
+          "maintainedBy": "Blockchain Community",
+          "learning": "Alta",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 8,
+          "useCases": ["DeFi Protocols", "Token Management", "Governance", "Decentralized Applications"]
+        }
+      ],
+      "security": [
+        {
+          "id": "security",
+          "name": "Security",
+          "type": "Practice",
+          "category": "Security",
+          "popularity": "Muy Alta",
+          "description": "Prácticas y principios de seguridad en sistemas y aplicaciones.",
+          "maintainedBy": "Industry Standard",
+          "learning": "Alta",
+          "jobDemand": "Muy Alta",
+          "yearsUsed": 30,
+          "useCases": ["Cybersecurity", "Vulnerability Management", "Incident Response"]
+        },
+        {
+          "id": "pentesting",
+          "name": "Pentesting",
+          "type": "Practice",
+          "category": "Security",
+          "popularity": "Alta",
+          "description": "Pruebas de penetración para identificar vulnerabilidades en sistemas.",
+          "maintainedBy": "Industry Standard",
+          "learning": "Alta",
+          "jobDemand": "Alta",
+          "yearsUsed": 20,
+          "useCases": ["Vulnerability Testing", "Security Audits", "Risk Assessment"]
+        },
+        {
+          "id": "iso27001",
+          "name": "ISO 27001",
+          "type": "Standard",
+          "category": "Security",
+          "popularity": "Alta",
+          "description": "Estándar internacional para gestión de seguridad de la información.",
+          "maintainedBy": "ISO/IEC",
+          "learning": "Media",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 18,
+          "useCases": ["Information Security", "Compliance", "Risk Management"]
+        }
+      ],
+      "project-management": [
+        {
+          "id": "agile",
+          "name": "Agile",
+          "type": "Methodology",
+          "category": "Project Management",
+          "popularity": "Muy Alta",
+          "description": "Metodología ágil para desarrollo iterativo e incremental.",
+          "maintainedBy": "Agile Alliance",
+          "learning": "Fácil-Media",
+          "jobDemand": "Muy Alta",
+          "yearsUsed": 20,
+          "useCases": ["Software Development", "Team Collaboration", "Iterative Delivery"]
+        },
+        {
+          "id": "scrum",
+          "name": "Scrum",
+          "type": "Framework",
+          "category": "Project Management",
+          "popularity": "Muy Alta",
+          "description": "Framework ágil estructurado para gestión de proyectos con sprints.",
+          "maintainedBy": "Scrum.org",
+          "learning": "Fácil",
+          "jobDemand": "Muy Alta",
+          "yearsUsed": 18,
+          "useCases": ["Sprint Planning", "Daily Standups", "Sprint Reviews", "Retrospectives"]
+        },
+        {
+          "id": "productmanagement",
+          "name": "Product Management",
+          "type": "Discipline",
+          "category": "Product",
+          "popularity": "Muy Alta",
+          "description": "Disciplina de gestión de ciclo de vida completo de productos desde concepto hasta lanzamiento.",
+          "maintainedBy": "Industry Standard",
+          "learning": "Alta",
+          "jobDemand": "Alta",
+          "yearsUsed": 15,
+          "useCases": ["Product Strategy", "Roadmap Planning", "Stakeholder Management", "Feature Prioritization", "Market Analysis"]
+        }
+      ],
+      "design": [
+        {
+          "id": "prototyping",
+          "name": "Prototyping",
+          "type": "Practice",
+          "category": "Design",
+          "popularity": "Muy Alta",
+          "description": "Creación de prototipos interactivos para validar conceptos y experiencias de usuario.",
+          "maintainedBy": "Industry Standard",
+          "learning": "Fácil-Media",
+          "jobDemand": "Alta",
+          "yearsUsed": 10,
+          "useCases": ["User Testing", "Design Validation", "Stakeholder Communication", "Interactive Mockups", "Design Iteration"]
+        }
+      ],
+      "coredata": [
+        {
+          "id": "coredata",
+          "name": "Core Data",
+          "type": "Framework",
+          "category": "Mobile",
+          "popularity": "Alta",
+          "description": "Framework de Apple para gestión de datos persistentes en iOS y macOS.",
+          "maintainedBy": "Apple",
+          "learning": "Media",
+          "jobDemand": "Media-Alta",
+          "yearsUsed": 12,
+          "useCases": ["Data Persistence", "Object Graph Management", "Local Storage"]
+        }
+      ]
+    },
+    "deployment": {
+      "platforms": [
+        {
+          "type": "Static Site",
+          "description": "Aplicación SPA servida como HTML estático",
+          "compatibility": "Todos los navegadores modernos"
+        }
+      ],
+      "requirements": {
+        "browser": "ES2020+ support",
+        "javascript": "Habilitado",
+        "connectivity": "Acceso a recursos locales JSON"
+      }
+    },
+    "performance": {
+      "optimizations": [
+        "Lazy loading de datos",
+        "Event delegation",
+        "Shadow DOM encapsulation",
+        "CSS Custom Properties caching",
+        "Efficient DOM manipulation"
+      ],
+      "metrics": {
+        "targetFCP": "< 1s",
+        "targetLCP": "< 2s",
+        "bundleSize": "Minimal (no build step)"
+      }
+    },
+    "browsers": {
+      "minimum": {
+        "chrome": "77+",
+        "firefox": "63+",
+        "safari": "10.1+",
+        "edge": "79+"
+      },
+      "features_used": [
+        "ES6 Modules",
+        "Fetch API",
+        "Web Components",
+        "CSS Custom Properties",
+        "Grid & Flexbox"
+      ]
+    },
+    "documentation": {
+      "files": [
+        {
+          "file": "TECH-ICONS.md",
+          "description": "Documentación del sistema de iconos de tecnología"
+        },
+        {
+          "file": "TOOLTIP-IMPROVEMENTS.md",
+          "description": "Mejoras y análisis del sistema de tooltips"
+        },
+        {
+          "file": "CONTEXTUAL.md",
+          "description": "Información contextual del proyecto"
+        },
+        {
+          "file": "FEEDBACK.md",
+          "description": "Sistema de feedback del usuario"
+        }
+      ]
+    },
+    "summary": {
+      "projectType": "Single Page Application (SPA)",
+      "architecture": "Modular JavaScript Vanilla + Web Components",
+      "framework": "None (Pure JavaScript + Web Components)",
+      "dependencies": "Zero external dependencies",
+      "buildTool": "None (Direct ES6 modules)",
+      "cssFramework": "Custom CSS with CSS Variables",
+      "dataSource": "Local JSON files + Mock API",
+      "highlight": "Pure JavaScript con Web Components - Sin frameworks pesados, máxima performance"
+    }
+  }
+}
